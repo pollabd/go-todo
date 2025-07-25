@@ -53,10 +53,8 @@ func main() {
 	}
 	defer app.client.Disconnect(context.Background())
 
-	// Initialize Fiber app
 	fiberApp := fiber.New()
 
-	// Add CORS middleware
 	fiberApp.Use(cors.New())
 
 	// Setup routes
