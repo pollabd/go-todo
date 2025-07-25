@@ -30,8 +30,6 @@ type App struct {
 }
 
 func main() {
-	fmt.Println("Server is Running")
-
 	if err := godotenv.Load(".env"); err != nil {
 		log.Println("No .env file found - using system environment variables")
 	}
