@@ -28,8 +28,6 @@ services:
     restart: unless-stopped
     ports:
       - "5000:5000"
-    env_file:
-      - .env
     environment:
       - MONGODB_URI=mongodb://admin:password123@mongodb:27017/todoapp?authSource=admin
       - PORT=5000
