@@ -1,31 +1,41 @@
-
-.env
-node_modules
-
-# Compiled Object files, Static and Dynamic libs (Shared Objects)
-*.o
-*.a
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
 *.so
+*.dylib
 
-# Folders
-_obj
-_test
-vendor/
+# Test binaries
+*.test
 
-# logs
+# Output of go build
+*.out
+
+# Go workspace files
+go.work
+go.work.sum
+
+# Go vendor
+/vendor/
+
+# IDE & Editor specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+
+# Logs
 *.log
 
-# Compiled binary files
-*.exe
-*.out
-
-# macOS specific files
+# OS-specific
 .DS_Store
+Thumbs.db
 
-# Go specific files
-# Compiled binary for packages and commands
-/bin/
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+# Fiber specific (compiled templates or cache if used)
+fiber.pid
+.tmp/
 
-/tmp
+# Environment files
+.env
+.env.*
